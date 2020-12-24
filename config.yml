@@ -1,0 +1,18 @@
+title: python
+description: >-
+  This course will [try to] teach you about CI/CD with Python! It's a big
+  journey and lets walk through it, together! 
+template:
+  repo: python-template
+  name: python
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
